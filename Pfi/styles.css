@@ -1,0 +1,110 @@
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  background: #151515;
+  color: #d2d2d2;
+  font-size: 14px;
+  height: 100%;
+}
+
+.romback {
+  background-image: url('images/Romain_background.jpg');
+}
+.gothback {
+  background-image: url('images/Gothic_background.jpg');
+}
+.modrnback {
+  background-image: url('images/Moderne_background.jpg');
+}
+
+.item1 { grid-area: header; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 5px;
+  size: 20%
+}
+
+.grid-container > div {
+  background-color: #000000;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+}
+
+a:visited, a:link {
+color: red;
+}
+a:hover {
+color:white;
+}
+a:active {
+text-shadow: black;
+}
+
+p {
+  padding: 4%;
+}
+
+nav {
+  background: #1e1e1e;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.btn 
+{
+  display: block, sticky; 
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 3px;
+  margin-right: 3px;
+  background-color: black;
+  width: 13.2%;
+  text-align: center;
+}
+
+.btn > ul 
+{
+  display: none;
+  background-color: red;
+  position: absolute;
+  transform: translate(-30px, 10px)
+}
+
+.btn:hover
+{
+  background-color: white(5, 40, 116);
+}
+
+nav ul 
+{
+  list-style: none;
+  padding: 0px;
+}
+
+nav>ul>li {
+  display:inline-block;
+  border: 1px solid black;
+}
+
+nav>ul>li>ul {
+  display: hidden;
+}
+
+.IMAGE{
+  width: 500px;
+  height: 400px;
+}
